@@ -53,7 +53,7 @@ VALUES ('Blood Noir', 'Fantasy', 'Voltaire Von Tresser', 'October 13 , 2013');
 --
 
 --
--- Indexes for table `tbl_music`
+-- Indexes for table `tbl_book`
 --
 ALTER TABLE `tbl_book`
   ADD PRIMARY KEY (`bok_id`);
