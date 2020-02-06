@@ -33,6 +33,8 @@ CREATE TABLE `tbl_book` (
   `title` varchar(180) NOT NULL DEFAULT '',
   `genre` varchar(180) NOT NULL DEFAULT '',
   `author` varchar(180) NOT NULL DEFAULT '',
+  `Date` varchar(180) NOT NULL DEFAULT '',
+
 
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
