@@ -12,10 +12,10 @@
  {?>
      <div class="border">
      <?php
-     $Title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
-     $Author = $data->getElementsByTagName("Author")->item(0)->nodeValue;
-     $Genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
-     $Date = $data->getElementsByTagName("Date")->item(0)->nodeValue;
+     $Title = $data->getElementsByTagName("title")->item(0)->nodeValue;
+     $Author = $data->getElementsByTagName("author")->item(0)->nodeValue;
+     $Genre = $data->getElementsByTagName("genre")->item(0)->nodeValue;
+     $Date = $data->getElementsByTagName("date")->item(0)->nodeValue;
      echo "<ul>
             <h2>$Title</h2>
               <ul>
