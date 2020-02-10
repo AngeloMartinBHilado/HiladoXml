@@ -2,7 +2,7 @@
  $domOBJ = new DOMDocument();
  $domOBJ->load("https://firstappanj.herokuapp.com//rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("Title");
+ $content = $domOBJ->getElementsByTagName("Books");
 ?>
 
  <h1>Books</h1>
