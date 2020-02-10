@@ -18,13 +18,13 @@
         $title = $r['Title'];
         $genre = $r['Genre'];
         $author = $r['Author'];
-        $dpub = $r['album'];
+        $dpub = $r['Date'];
 
         echo "<Collection>
         <title>$title</title>
         <genre>$genre</genre>
-        <artist>$author</artist>
-        <album>$dpub</album>
+        <author>$author</author>
+        <date>$dpub</date>
         </Collection>";
     }
     echo "</channel></rss>";
