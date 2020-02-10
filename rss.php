@@ -5,7 +5,7 @@
     if(mysqli_connect_errno($conn)){
         echo "Database connection failed!: ". mysqli_connect_errno();
     }
-    $sql = "SELECT * FROM tbl_book ORDER BY BookID DESC LIMIT 20";
+    $sql = "SELECT * FROM tbl_book ORDER BY BookID DESC";
     $q = mysqli_query($conn, $sql);
 
     header("Content-type: text/xml");
