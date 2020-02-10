@@ -15,17 +15,17 @@
     
     while($r = mysqli_fetch_array($q)){
 
-        $title = $r['Title'];
-        $genre = $r['Genre'];
-        $author = $r['Author'];
-        $dpub = $r['Date'];
+        $Title = $r['Title'];
+        $Genre = $r['Genre'];
+        $Author = $r['Author'];
+        $Date = $r['Date'];
 
-        echo "<Collection>
-        <title>$title</title>
-        <genre>$genre</genre>
-        <author>$author</author>
-        <date>$dpub</date>
-        </Collection>";
+        echo "<Books>
+        <title>$Title</title>
+        <genre>$Genre</genre>
+        <author>$Author</author>
+        <date>$Date</date>
+        </Books>";
     }
     echo "</channel></rss>";
 ?>
