@@ -2,26 +2,26 @@
  $domOBJ = new DOMDocument();
  $domOBJ->load("https://hilado-xml-pipeline.herokuapp.com/rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("track");
+ $content = $domOBJ->getElementsByTagName("Title");
 ?>
 
- <h1>Tracks</h1>
+ <h1>Books</h1>
 
  <?php
  foreach( $content as $data )
  {?>
      <div class="border">
      <?php
-     $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-     $artist = $data->getElementsByTagName("artist")->item(0)->nodeValue;
-     $genre = $data->getElementsByTagName("genre")->item(0)->nodeValue;
-     $album = $data->getElementsByTagName("album")->item(0)->nodeValue;
+     $title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
+     $author = $data->getElementsByTagName("Author")->item(0)->nodeValue;
+     $genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
+     $dpub = $data->getElementsByTagName("dpub")->item(0)->nodeValue;
      echo "<ul>
             <h2>$title</h2>
               <ul>
                   <li>Author: $artist </li>
                   <li>Genre: $genre </li>
-                  <li>Album: $album </li>
+                  <li>Date Published: $dpub </li>
               </ul>
           </ul>";
     ?>
