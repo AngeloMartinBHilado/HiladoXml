@@ -12,16 +12,16 @@
  {?>
      <div class="border">
      <?php
-     $title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
-     $author = $data->getElementsByTagName("Author")->item(0)->nodeValue;
-     $genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
-     $dpub = $data->getElementsByTagName("dpub")->item(0)->nodeValue;
+     $Title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
+     $Author = $data->getElementsByTagName("Author")->item(0)->nodeValue;
+     $Genre = $data->getElementsByTagName("Genre")->item(0)->nodeValue;
+     $Date = $data->getElementsByTagName("Date")->item(0)->nodeValue;
      echo "<ul>
-            <h2>$title</h2>
+            <h2>$Title</h2>
               <ul>
-                  <li>Author: $artist </li>
-                  <li>Genre: $genre </li>
-                  <li>Date Published: $dpub </li>
+                  <li>Author: $Author </li>
+                  <li>Genre: $Genre </li>
+                  <li>Date Published: $Date </li>
               </ul>
           </ul>";
     ?>
