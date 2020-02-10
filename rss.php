@@ -1,11 +1,11 @@
 <?php 
     $conn = mysqli_connect("dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com", "admin", "root1234") or die (mysqli_error($conn));
-    $db = mysqli_select_db($conn, "db_1820522");
+    $db = mysqli_select_db($conn, "db_1820535");
 
     if(mysqli_connect_errno($conn)){
         echo "Database connection failed!: ". mysqli_connect_errno();
     }
-    $sql = "SELECT * FROM tbl_music ORDER BY mus_id DESC LIMIT 20";
+    $sql = "SELECT * FROM tbl_book ORDER BY BookID DESC LIMIT 20";
     $q = mysqli_query($conn, $sql);
 
     header("Content-type: text/xml");
@@ -15,17 +15,17 @@
     
     while($r = mysqli_fetch_array($q)){
 
-        $title = $r['title'];
-        $genre = $r['genre'];
-        $artist = $r['artist'];
-        $album = $r['album'];
+        $title = $r['Title'];
+        $genre = $r['Genre'];
+        $author = $r['Author'];
+        $dpub = $r['album'];
 
-        echo "<track>
+        echo "<Collection>
         <title>$title</title>
         <genre>$genre</genre>
-        <artist>$artist</artist>
-        <album>$album</album>
-        </track>";
+        <artist>$author</artist>
+        <album>$dpub</album>
+        </Collection>";
     }
     echo "</channel></rss>";
 ?>
