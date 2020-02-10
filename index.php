@@ -1,6 +1,6 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://hilado-xml-pipeline.herokuapp.com/rss.php");//XML page URL
+ $domOBJ->load("https://firstappanj.herokuapp.com//rss.php");//XML page URL
  
  $content = $domOBJ->getElementsByTagName("Title");
 ?>
