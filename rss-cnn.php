@@ -9,14 +9,14 @@
     <?php
  foreach( $content as $data )
  {
-   $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
-   $artist = $data->getElementsByTagName("artist")->item(0)->nodeValue;
+   $Title = $data->getElementsByTagName("Title")->item(0)->nodeValue;
+   $Author = $data->getElementsByTagName("Author")->item(0)->nodeValue;
   
    echo "
        testing
-        <li>$title
+        <li>$Title
             <ul>
-                <li>$artist</li>
+                <li>$Author</li>
             </ul>
         </li>";
  }
