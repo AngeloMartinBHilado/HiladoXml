@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_book` (
-  `bok_id` int(5) NOT NULL DEFAULT 0,
+  `BookID` int(9) NOT NULL DEFAULT 0,
   `title` varchar(180) NOT NULL DEFAULT '',
   `genre` varchar(180) NOT NULL DEFAULT '',
   `author` varchar(180) NOT NULL DEFAULT '',
@@ -56,7 +56,7 @@ VALUES ('Blood Noir', 'Fantasy', 'Voltaire Von Tresser', 'October 13 , 2013');
 -- Indexes for table `tbl_book`
 --
 ALTER TABLE `tbl_book`
-  ADD PRIMARY KEY (`bok_id`);
+  ADD PRIMARY KEY (`BookID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
