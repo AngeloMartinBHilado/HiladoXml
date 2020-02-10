@@ -20,12 +20,12 @@
         $Author = $r['Author'];
         $Date = $r['Date'];
 
-        echo "<Games>
+        echo "<Books>
         <title>$Title</title>
         <genre>$Genre</genre>
         <author>$Author</author>
         <date>$Date</date>
-        </Games>";
+        </Books>";
     }
     echo "</channel></rss>";
 ?>
