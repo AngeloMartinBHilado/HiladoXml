@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_book`
+-- Database: `db_1820535`
 --
 
 -- --------------------------------------------------------
@@ -38,15 +38,15 @@ CREATE TABLE `tbl_book` (
 
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO tbl_stocks (title, genre,author,Date)
+INSERT INTO tbl_book (title, genre,author,Date)
 VALUES ('Percy Jackson:Lightning Thief', 'Fantasy', 'Rick Riordan', 'March 25 , 2007');
-INSERT INTO tbl_stocks (title, genre,author,Date)
+INSERT INTO tbl_book (title, genre,author,Date)
 VALUES ('Percy Jackson:last Olympian', 'Fantasy', 'Rick Riordan', 'November 25 , 2008');
-INSERT INTO tbl_stocks (title, genre,author,Date)
+INSERT INTO tbl_book (title, genre,author,Date)
 VALUES ('Percy Jackson:Battle of the Labyrinth', 'Fantasy', 'Rick Riordan' , 'March 25 , 2009');
-INSERT INTO tbl_stocks (title, genre,author,Date)
+INSERT INTO tbl_book (title, genre,author,Date)
 VALUES ('Percy Jackson:Lightning Thief', 'Fantasy', 'Rick Riordan' , 'March 25 , 2011');
-INSERT INTO tbl_stocks (title, genre,author,Date)
+INSERT INTO tbl_book (title, genre,author,Date)
 VALUES ('Blood Noir', 'Fantasy', 'Voltaire Von Tresser', 'October 13 , 2013');
 --
 -- Indexes for dumped tables
