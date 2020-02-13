@@ -15,10 +15,10 @@
     
     while($r = mysqli_fetch_array($q)){
 
-        $Title = $r['Title'];
-        $Genre = $r['Genre'];
-        $Author = $r['Author'];
-        $Date = $r['Date'];
+        $Title = $r['title'];
+        $Genre = $r['genre'];
+        $Author = $r['author'];
+        $Date = $r['date'];
 
         echo "<Books>
         <title>$Title</title>
